@@ -48,3 +48,4 @@ gem 'httparty'
 # gem 'debugger', group: [:development, :test]
 gem 'byebug'
 
+gem 'annotate'

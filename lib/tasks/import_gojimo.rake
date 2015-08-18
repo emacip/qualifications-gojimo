@@ -10,29 +10,31 @@ namespace :import do
     response = HTTParty.get(url)
     p "No data from the API" if response.empty?
     response.each do |data|
-      qualification = Qualification.new
+      create_qualification(data)
+
 
 
     end
   end
 
-  def create_assets
+  def create_assets(data)
 
   end
 
-  def create_default_product
+  def create_default_product(data)
 
   end
 
-  def create_subject
+  def create_subject(data)
 
   end
 
-  def create_countries
+  def create_countries(data)
 
   end
 
-  def create_qualification
+  def create_qualification(data)
+    qualification = Qualification.new()
 
   end
 end
