@@ -4,7 +4,7 @@ class CreateQualifications < ActiveRecord::Migration
       t.string :id
       t.string :name
       t.string :link
-      t.integer :country_id
+      t.belongs_to :country, index:true
       t.timestamps
     end
     add_index :qualifications, :id

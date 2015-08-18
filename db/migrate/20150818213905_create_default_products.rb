@@ -6,7 +6,7 @@ class CreateDefaultProducts < ActiveRecord::Migration
       t.string :link
       t.string :id
       t.string :id
-      t.integer :qualification_id
+      t.belongs_to :qualification, index:true
       t.timestamps
     end
     add_index :default_products, :id

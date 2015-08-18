@@ -5,7 +5,8 @@ class CreateSubjects < ActiveRecord::Migration
       t.string :title
       t.string :link
       t.string :colour
-      t.integer :qualification_id
+      t.belongs_to :qualification, index:true
+
     end
     add_index :subjects, :id
 

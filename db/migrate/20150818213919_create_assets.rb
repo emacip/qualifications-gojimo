@@ -9,7 +9,8 @@ class CreateAssets < ActiveRecord::Migration
       t.string :unzipped_base_url
       t.hstore  :info
       t.string :link
-      t.integer :default_product_id
+      t.belongs_to :default_product, index:true
+
       t.timestamps
     end
   end

@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(version: 20150818213919) do
     t.datetime "updated_at"
   end
 
+  add_index "assets", ["default_product_id"], name: "index_assets_on_default_product_id", using: :btree
+
   create_table "countries", force: true do |t|
     t.string   "code"
     t.string   "name"
@@ -51,6 +53,7 @@ ActiveRecord::Schema.define(version: 20150818213919) do
   end
 
   add_index "default_products", ["id"], name: "index_default_products_on_id", using: :btree
+  add_index "default_products", ["qualification_id"], name: "index_default_products_on_qualification_id", using: :btree
 
   create_table "qualifications", id: false, force: true do |t|
     t.string   "id"
@@ -61,6 +64,7 @@ ActiveRecord::Schema.define(version: 20150818213919) do
     t.datetime "updated_at"
   end
 
+  add_index "qualifications", ["country_id"], name: "index_qualifications_on_country_id", using: :btree
   add_index "qualifications", ["id"], name: "index_qualifications_on_id", using: :btree
 
   create_table "subjects", id: false, force: true do |t|
@@ -72,5 +76,6 @@ ActiveRecord::Schema.define(version: 20150818213919) do
   end
 
   add_index "subjects", ["id"], name: "index_subjects_on_id", using: :btree
+  add_index "subjects", ["qualification_id"], name: "index_subjects_on_qualification_id", using: :btree
 
 end

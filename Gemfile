@@ -32,6 +32,9 @@ gem 'spring',        group: :development
 gem 'jwt'
 gem 'json'
 
+# Makes http fun again!
+gem 'httparty'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -43,4 +46,5 @@ gem 'json'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'byebug'
 
