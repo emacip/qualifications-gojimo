@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20150818213919) do
     t.integer  "size"
     t.string   "path"
     t.string   "unzipped_base_url"
-    t.hstore   "info"
+    t.hstore   "info",               array: true
     t.string   "link"
     t.integer  "default_product_id"
     t.datetime "created_at"

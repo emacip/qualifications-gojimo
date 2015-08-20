@@ -7,7 +7,7 @@ class CreateAssets < ActiveRecord::Migration
       t.integer :size
       t.string  :path
       t.string :unzipped_base_url
-      t.hstore  :info
+      t.hstore  :info, :array => true
       t.string :link
       t.belongs_to :default_product, index:true
 
