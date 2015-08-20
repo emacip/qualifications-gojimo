@@ -1,6 +1,6 @@
 class CreateSubjects < ActiveRecord::Migration
   def change
-    create_table :subjects, {:id => false} do |t|
+    create_table :subjects, :id => false do |t|
       t.string :id
       t.string :title
       t.string :link

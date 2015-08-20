@@ -1,6 +1,6 @@
 class CreateAssets < ActiveRecord::Migration
   def change
-    create_table :assets, {:id => false} do |t|
+    create_table :assets, :id => false do |t|
       t.string :id
       t.string :copyright
       t.string :meta

@@ -18,7 +18,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: gojimo_dev
+  database: go_dev
   pool: 5
   username: postgres
   password:
@@ -48,7 +48,7 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: gojimo_test
+  database: go_test
   pool: 5
   username: postgres
   password:

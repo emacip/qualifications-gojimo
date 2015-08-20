@@ -11,8 +11,9 @@
 #
 
 class Qualification < ActiveRecord::Base
-  has_one :country
+  belongs_to :country
   has_many :subjects
   has_one :default_product
 
+  validates_presence_of :id
 end

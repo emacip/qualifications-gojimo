@@ -1,6 +1,6 @@
 class CreateQualifications < ActiveRecord::Migration
   def change
-    create_table :qualifications, {:id => false} do |t|
+    create_table :qualifications, :id => false do |t|
       t.string :id
       t.string :name
       t.string :link

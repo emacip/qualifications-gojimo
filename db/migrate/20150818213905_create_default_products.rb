@@ -1,6 +1,6 @@
 class CreateDefaultProducts < ActiveRecord::Migration
   def change
-    create_table :default_products, {:id => false} do |t|
+    create_table :default_products, :id => false do |t|
       t.string :id
       t.string :title
       t.string :link
