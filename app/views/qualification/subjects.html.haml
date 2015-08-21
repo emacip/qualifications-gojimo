@@ -1,0 +1,15 @@
+= link_to 'Back', root_path
+.row
+  .col-md-12
+    %table.table
+      %thead
+        %tr
+          %th #
+          %th title
+          %th link
+      %tbody
+        - @subjects.each do |su|
+          %tr{style: "background-color: #{su.colour  if not su.colour.nil?}"}
+            %th= su.id
+            %td= su.title
+            %td= su.link

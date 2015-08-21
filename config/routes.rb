@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root 'qualification#index'
 
   get 'qualification/index' => 'qualification#index'
+  get 'qualification/:id/subjects' => 'qualification#subjects', as: :subjects
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -18,6 +20,7 @@ Rails.application.routes.draw do
   #   resources :products
 
   # Example resource route with options:
+
   #   resources :products do
   #     member do
   #       get 'short'

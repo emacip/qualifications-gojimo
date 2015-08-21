@@ -15,5 +15,5 @@
             %td= qa.name
             %td= qa.link
             %td= qa.country.code if not qa.country.nil?
-            %td= link_to 'subjects', '#'
+            %td= link_to 'subjects', subjects_path(qa.id)
 
