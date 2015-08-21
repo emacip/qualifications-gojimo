@@ -11,6 +11,8 @@
 #
 
 class DefaultProduct < ActiveRecord::Base
+  self.primary_key = 'id'
+
   has_many :assets
   belongs_to :qualification
 end

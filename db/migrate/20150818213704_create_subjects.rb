@@ -10,5 +10,6 @@ class CreateSubjects < ActiveRecord::Migration
     end
     add_index :subjects, :id
 
+    change_column :subjects, :qualification_id,  :string
   end
 end

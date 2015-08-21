@@ -10,5 +10,7 @@
 #
 
 class Subject < ActiveRecord::Base
-  has_many :qualification
+  self.primary_key = 'id'
+
+  belongs_to :qualification
 end

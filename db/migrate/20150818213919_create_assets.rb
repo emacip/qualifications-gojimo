@@ -13,5 +13,7 @@ class CreateAssets < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    change_column :assets, :default_product_id,  :string
   end
 end

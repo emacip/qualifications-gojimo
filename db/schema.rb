@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(version: 20150818213919) do
     t.string   "unzipped_base_url"
     t.hstore   "info",               array: true
     t.string   "link"
-    t.integer  "default_product_id"
+    t.string   "default_product_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -68,11 +68,11 @@ ActiveRecord::Schema.define(version: 20150818213919) do
   add_index "qualifications", ["id"], name: "index_qualifications_on_id", using: :btree
 
   create_table "subjects", id: false, force: true do |t|
-    t.string  "id"
-    t.string  "title"
-    t.string  "link"
-    t.string  "colour"
-    t.integer "qualification_id"
+    t.string "id"
+    t.string "title"
+    t.string "link"
+    t.string "colour"
+    t.string "qualification_id"
   end
 
   add_index "subjects", ["id"], name: "index_subjects_on_id", using: :btree

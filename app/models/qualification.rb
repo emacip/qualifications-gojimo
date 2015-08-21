@@ -11,6 +11,9 @@
 #
 
 class Qualification < ActiveRecord::Base
+
+  self.primary_key = 'id'
+
   belongs_to :country
   has_many :subjects
   has_one :default_product
