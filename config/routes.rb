@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  get 'qualification/index'
+  root 'qualification#index'
 
+  get 'qualification/index' => 'qualification#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
