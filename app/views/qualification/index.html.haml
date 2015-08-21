@@ -1,0 +1,16 @@
+.row
+  .col-md-12
+    %table.table
+      %thead
+        %tr
+          %th #
+          %th name
+          %th link
+          %th country
+      %tbody
+        - @qualifications.each do |qa|
+          %tr
+            %th= qa.id
+            %td= qa.name
+            %td= qa.link
+            %td= qa.country.code if not qa.country.nil?
