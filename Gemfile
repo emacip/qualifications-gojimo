@@ -49,3 +49,6 @@ gem 'httparty'
 gem 'byebug'
 
 gem 'annotate'
+
+# bootstrap
+gem 'bootstrap-sass'
