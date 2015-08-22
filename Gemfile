@@ -55,3 +55,21 @@ gem 'bootstrap-sass'
 
 # Haml generators for Rails 4
 gem "haml-rails", "~> 0.9"
+
+group :development, :test do
+  gem 'rspec-rails'
+
+  # testing frameworks
+  gem 'rspec-rails'
+  gem 'steak'
+  gem 'delorean'
+  gem 'spork'
+  gem 'database_cleaner'
+
+  # browser testing
+  gem 'capybara'
+  gem 'launchy'
+
+  # random data generator
+  gem 'ffaker'
+end
